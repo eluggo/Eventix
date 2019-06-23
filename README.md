@@ -58,6 +58,7 @@ O contexto é, então, quem conhece os módulos que precisam ser chamados para q
 Outro exemplo consta no link abaixo, mais precisamente na função `calculate/1`.
 
 [Contexto Bills](https://github.com/danielfoxp2/phone_billing/blob/master/apps/billing_gateway/lib/billing_gateway/bills/bills.ex)
-    
+   
+### Footnotes
 p.s.: Olhando agora percebo que faltou refatorar o método `calculate_bill/1` e extrair a inserção de tarifas, de modo que pudesse ser apenas mais uma chamada no `calculate/1`, deixando a função `calculate_bill/1` com apenas uma responsabilidade.
 p.s.2: Após discussão dos participantes sobre a arquitetura, todo o conteúdo a partir de `Exemplos` será removido e o conteúdo em `Arquitetura Sugerida` será alterado para refletir a arquitetura que de fato será utilizada, podendo também vir a ser removido.
